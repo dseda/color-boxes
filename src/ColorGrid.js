@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import ColorBox from "./ColorBox";
 import "./ColorGrid.css";
+import { generateRandomColor } from "./helpers";
 class ColorGrid extends Component {
   render() {
     return (
