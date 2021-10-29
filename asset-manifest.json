@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/color-boxes/static/css/main.6f337f04.chunk.css",
+    "main.js": "/color-boxes/static/js/main.63ac2e20.chunk.js",
+    "main.js.map": "/color-boxes/static/js/main.63ac2e20.chunk.js.map",
+    "runtime-main.js": "/color-boxes/static/js/runtime-main.c872913f.js",
+    "runtime-main.js.map": "/color-boxes/static/js/runtime-main.c872913f.js.map",
+    "static/js/2.5e18a015.chunk.js": "/color-boxes/static/js/2.5e18a015.chunk.js",
+    "static/js/2.5e18a015.chunk.js.map": "/color-boxes/static/js/2.5e18a015.chunk.js.map",
+    "static/js/3.bbe9664d.chunk.js": "/color-boxes/static/js/3.bbe9664d.chunk.js",
+    "static/js/3.bbe9664d.chunk.js.map": "/color-boxes/static/js/3.bbe9664d.chunk.js.map",
+    "index.html": "/color-boxes/index.html",
+    "static/css/main.6f337f04.chunk.css.map": "/color-boxes/static/css/main.6f337f04.chunk.css.map",
+    "static/js/2.5e18a015.chunk.js.LICENSE.txt": "/color-boxes/static/js/2.5e18a015.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/color-boxes/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c872913f.js",
+    "static/js/2.5e18a015.chunk.js",
+    "static/css/main.6f337f04.chunk.css",
+    "static/js/main.63ac2e20.chunk.js"
+  ]
+}
