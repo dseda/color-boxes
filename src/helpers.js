@@ -1,5 +1,3 @@
-import colors from "./colors";
-
-export const generateRandomColor = () => {
-  return colors[Math.floor(Math.random() * colors.length)];
+export const generateRandomColor = (arr) => {
+  return arr[Math.floor(Math.random() * arr.length)];
 };

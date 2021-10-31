@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./ColorBox.css";
 import { generateRandomColor } from "./helpers";
+import colors from "./colors";
 class ColorBox extends Component {
   constructor(props) {
     super(props);
@@ -11,19 +12,25 @@ class ColorBox extends Component {
   }
 
   handleClick(e) {
-    let newColor = generateRandomColor();
+    let newColor = generateRandomColor(colors);
     while (newColor == this.state.currentColor) {
-      newColor = generateRandomColor();
+      newColor = generateRandomColor(colors);
     }
     this.setState({ currentColor: newColor });
   }
   render() {
+    let initialColor = generateRandomColor(colors);
+    console.log(initialColor);
     return (
       <div
         className="Color-Box"
         onClick={this.handleClick}
-        style={{ backgroundColor: this.state.currentColor }}
-      ></div>
+        style={{ backgroundColor: this.state.currentColor || initialColor }}
+      >
+        <p>
+          {this.state.currentColor ? this.state.currentColor : initialColor}
+        </p>
+      </div>
     );
   }
 }

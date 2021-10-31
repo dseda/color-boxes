@@ -1,31 +1,17 @@
 import React, { Component } from "react";
 import ColorBox from "./ColorBox";
 import "./ColorGrid.css";
-import { generateRandomColor } from "./helpers";
+
 class ColorGrid extends Component {
+  static defaultProps = {
+    numBoxes: 18,
+  };
+
   render() {
-    return (
-      <div className="Color-Grid">
-        <ColorBox />
-        <ColorBox />
-        <ColorBox />
-        <ColorBox />
-        <ColorBox />
-        <ColorBox />
-        <ColorBox />
-        <ColorBox />
-        <ColorBox />
-        <ColorBox />
-        <ColorBox />
-        <ColorBox />
-        <ColorBox />
-        <ColorBox />
-        <ColorBox />
-        <ColorBox />
-        <ColorBox />
-        <ColorBox />
-      </div>
-    );
+    const boxes = Array.from({ length: this.props.numBoxes }).map(() => (
+      <ColorBox />
+    ));
+    return <div className="Color-Grid">{boxes}</div>;
   }
 }
 
